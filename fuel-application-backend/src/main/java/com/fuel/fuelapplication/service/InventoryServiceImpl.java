@@ -17,7 +17,7 @@ public class InventoryServiceImpl implements InventoryService{
 
     @Override
     public Inventory save(Inventory inventory) {
-        
+
         if (inventory.getName().trim().equals(null) || inventory.getName().trim().equals(null)){
             throw new RuntimeException("Error: quantity is invalid");
         }
